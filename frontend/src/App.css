@@ -1,0 +1,143 @@
+.App{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* background-image: url('../public/wall1.jpg');
+    background-repeat: repeat-y;
+    background-size: cover; */
+    background: -webkit-linear-gradient(
+        to right,
+        #4e4ec5,
+        #ff00cc
+    );
+    background: linear-gradient(
+        to right,
+        #5858ac,
+        #c648ad
+    ); 
+}
+
+.container{
+    background: white;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.4),
+        rgba(255, 255, 255, 0.2)
+    );
+    backdrop-filter: blur(1rem);
+    width: 60%;
+    height: 80%;
+    z-index: 1;
+    border-radius: 5rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width:800px) {
+    .container{
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+}
+
+.container h1{
+    text-align: center;
+    margin-top: 5vh;
+    color: white;
+}
+
+.field{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2vh;
+    justify-content: center;
+}
+
+.textt{
+    width: 40vw;
+    padding: 3vh;
+    border-radius: 2vh;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.377);
+    font-size: 2vh;
+    color: rgb(0, 0, 0);
+}
+
+.textt2{
+    width: 20vw;
+    padding: 1vh;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.377);
+    font-size: 2vh;
+    color: rgb(0, 0, 0);
+    margin-left:1vh ;
+    margin-top: 1vh;
+}
+
+
+
+.addbut{
+    margin-left: 2vh;
+    padding: 2vh;
+    background-color: rgba(0, 20, 0, 0.406) ;
+    color: white;
+    border-radius: 3vh;
+    width: 6vh;
+    text-align: center;
+}
+
+.addbut:hover{
+    cursor: pointer;
+    background-color: black;
+}
+
+.ll{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list{
+    overflow-y: scroll;
+    height: 50vh;
+    background-color: rgba(240, 248, 255, 0.242);
+    width: 50vw;
+    border-radius: 3vh;
+}
+@media (max-width:800px) {
+    .list{
+        overflow-y: scroll;
+        height: 70vh;
+        background-color: rgba(240, 248, 255, 0.242);
+        width: 90vw;
+        border-radius: 3vh;
+    }
+    .textt{
+        width: 60vw;
+    }
+    
+    .textt2{
+        width: 30vw;
+    }
+}
+
+.smin{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 0);
+  }
+::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.772);
+  }
